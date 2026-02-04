@@ -216,11 +216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapZoneAssignment
   assignedSnapZone: {fileID: 703254966}
---- !u!4 &156632892 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5081941355178637104, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-  m_PrefabInstance: {fileID: 554267283}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &234074358 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8285971430176759049, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
@@ -244,7 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToPlace
   snapPoint: {fileID: 718676207}
-  snapRange: 3
+  snapRange: 1000
   objectToSnap: {fileID: 622499719}
   grabbableTag: Grabbable
   zoneRenderer: {fileID: 0}
@@ -284,7 +279,6 @@ GameObject:
   - component: {fileID: 331297551}
   - component: {fileID: 331297553}
   - component: {fileID: 331297552}
-  - component: {fileID: 331297554}
   m_Layer: 0
   m_Name: Table (1)
   m_TagString: Untagged
@@ -370,27 +364,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 331297550}
   m_Mesh: {fileID: -6692290496178104961, guid: 8f9e4da5668113a4da8b4efea4a9499f, type: 3}
---- !u!65 &331297554
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 331297550}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.8319682, y: 0.7880049, z: 0.7738958}
-  m_Center: {x: -0.008701443, y: -0.015944555, z: 0.051315006}
 --- !u!1 &397070309
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,12 +405,11 @@ GameObject:
   m_Component:
   - component: {fileID: 503865954}
   - component: {fileID: 503865953}
-  - component: {fileID: 503865959}
   - component: {fileID: 503865955}
   - component: {fileID: 503865956}
   - component: {fileID: 503865958}
   - component: {fileID: 503865957}
-  - component: {fileID: 503865960}
+  - component: {fileID: 503865959}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -587,43 +559,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GearboxExplodedViewCustom
   entries:
-  - part: {fileID: 1338061171}
-    offsetWorld: {x: 0.6, y: 0, z: 0}
   - part: {fileID: 622499728}
-    offsetWorld: {x: 0, y: 0.5, z: 0}
-  - part: {fileID: 554267291}
-    offsetWorld: {x: -0.6, y: 0, z: 0}
-  - part: {fileID: 156632892}
-    offsetWorld: {x: 0.3, y: 0.5, z: 0.03}
-  - part: {fileID: 2136697111}
-    offsetWorld: {x: -0.3, y: 0.3, z: 0}
+    offsetWorld: {x: 5, y: 0, z: 0}
   toggleKey: 120
   animationDuration: 0.35
   holdPartsWhileExploded: 1
   captureBaseOnExplode: 1
   forceKinematicDuringExplode: 1
   debugLog: 0
---- !u!65 &503865960
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 503865952}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.30921566, y: 1, z: 0.53726375}
-  m_Center: {x: 0.020592418, y: 0, z: -0.12619793}
 --- !u!1001 &554267283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -634,35 +577,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4908932270941453920, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.259
+      value: -0.207
       objectReference: {fileID: 0}
     - target: {fileID: 4908932270941453920, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.273
+      value: -0.244
       objectReference: {fileID: 0}
     - target: {fileID: 4908932270941453920, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.094
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908932270941453920, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908932270941453920, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908932270941453920, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908932270941453920, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908932270941453920, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5050425063477209821, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_Layer
@@ -674,19 +597,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5081941355178637104, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.218
+      value: -0.124
       objectReference: {fileID: 0}
     - target: {fileID: 5081941355178637104, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.069
+      value: -0.312
       objectReference: {fileID: 0}
     - target: {fileID: 5574724591617159271, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.139
+      value: 1.075
       objectReference: {fileID: 0}
     - target: {fileID: 5574724591617159271, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.096
+      value: -0.031
       objectReference: {fileID: 0}
     - target: {fileID: 5606275718976269706, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_Layer
@@ -698,43 +621,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5995937105703999244, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.066
+      value: -0.006
       objectReference: {fileID: 0}
     - target: {fileID: 5995937105703999244, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.154
+      value: -0.086
       objectReference: {fileID: 0}
     - target: {fileID: 5995937105703999244, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.313
+      value: -0.048
       objectReference: {fileID: 0}
     - target: {fileID: 5995937105703999244, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.18874124
       objectReference: {fileID: 0}
     - target: {fileID: 5995937105703999244, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.88714135
       objectReference: {fileID: 0}
     - target: {fileID: 5995937105703999244, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.007474504
       objectReference: {fileID: 0}
     - target: {fileID: 5995937105703999244, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.42107135
       objectReference: {fileID: 0}
     - target: {fileID: 5995937105703999244, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 160.817
       objectReference: {fileID: 0}
     - target: {fileID: 5995937105703999244, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 52.561996
       objectReference: {fileID: 0}
     - target: {fileID: 5995937105703999244, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 10.505997
       objectReference: {fileID: 0}
     - target: {fileID: 6376544753447751094, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_Layer
@@ -798,7 +721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8770337726697883571, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.276
+      value: -0.232
       objectReference: {fileID: 0}
     - target: {fileID: 8770337726697883571, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -920,11 +843,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.00047998808, y: 0.000479984, z: 0.0027040201}
   m_Center: {x: -0.0000016166454, y: -0.00000057036243, z: 0.00016413839}
---- !u!4 &554267291 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4908932270941453920, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-  m_PrefabInstance: {fileID: 554267283}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &599263870
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,7 +1108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToPlace
   snapPoint: {fileID: 1021836127}
-  snapRange: 3
+  snapRange: 100
   objectToSnap: {fileID: 156632885}
   grabbableTag: Grabbable
   zoneRenderer: {fileID: 0}
@@ -1519,11 +1437,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!4 &1338061171 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5574724591617159271, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-  m_PrefabInstance: {fileID: 554267283}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1344686784 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5050425063477209821, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
@@ -1568,7 +1481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToPlace
   snapPoint: {fileID: 52838367}
-  snapRange: 3
+  snapRange: 1000
   objectToSnap: {fileID: 1338061163}
   grabbableTag: Grabbable
   zoneRenderer: {fileID: 0}
@@ -1659,14 +1572,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4863594968772373603, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 65bc0bae364c0fc4c81842c4818136bd, type: 2}
-    - target: {fileID: 4863594968772373603, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 65bc0bae364c0fc4c81842c4818136bd, type: 2}
     - target: {fileID: 5050425063477209821, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -1679,42 +1584,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5995937105703999244, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.246
-      objectReference: {fileID: 0}
-    - target: {fileID: 5995937105703999244, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.031
-      objectReference: {fileID: 0}
-    - target: {fileID: 5995937105703999244, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.336
-      objectReference: {fileID: 0}
-    - target: {fileID: 6083003245103760655, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 65bc0bae364c0fc4c81842c4818136bd, type: 2}
-    - target: {fileID: 6083003245103760655, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 65bc0bae364c0fc4c81842c4818136bd, type: 2}
-    - target: {fileID: 6254798806598405215, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 65bc0bae364c0fc4c81842c4818136bd, type: 2}
-    - target: {fileID: 6254798806598405215, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 65bc0bae364c0fc4c81842c4818136bd, type: 2}
-    - target: {fileID: 6254798806598405215, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-      propertyPath: 'm_Materials.Array.data[2]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 65bc0bae364c0fc4c81842c4818136bd, type: 2}
-    - target: {fileID: 6254798806598405215, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-      propertyPath: 'm_Materials.Array.data[3]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 65bc0bae364c0fc4c81842c4818136bd, type: 2}
     - target: {fileID: 6376544753447751094, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -1866,7 +1735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToPlace
   snapPoint: {fileID: 397070310}
-  snapRange: 3
+  snapRange: 100
   objectToSnap: {fileID: 554267284}
   grabbableTag: Grabbable
   zoneRenderer: {fileID: 0}
@@ -1900,32 +1769,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4908932270941453920, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
   m_PrefabInstance: {fileID: 1445783922}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1647191041 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6727635288471246466, guid: e6084503f826bbb428b1e677dc1a75d4, type: 3}
-  m_PrefabInstance: {fileID: 9160267057865506488}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1647191045
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1647191041}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.939297, y: 0.000000027238439, z: 2.0835936}
-  m_Center: {x: 0, y: -1.3322675e-15, z: 3.7865323e-29}
 --- !u!1 &1729456627
 GameObject:
   m_ObjectHideFlags: 0
@@ -2088,7 +1931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapToPlace
   snapPoint: {fileID: 1791005449}
-  snapRange: 3
+  snapRange: 100
   objectToSnap: {fileID: 2136697104}
   grabbableTag: Grabbable
   zoneRenderer: {fileID: 0}
@@ -2158,7 +2001,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!65 &2136697109
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2193,11 +2036,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SnapZoneAssignment
   assignedSnapZone: {fileID: 1755846849}
---- !u!4 &2136697111 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5995937105703999244, guid: 50d25de29d09eca4f941ce999cec169a, type: 3}
-  m_PrefabInstance: {fileID: 554267283}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9160267057865506488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2260,10 +2098,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8688982062548017324, guid: e6084503f826bbb428b1e677dc1a75d4, type: 3}
       insertIndex: 55
       addedObject: {fileID: 331297551}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6727635288471246466, guid: e6084503f826bbb428b1e677dc1a75d4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1647191045}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6084503f826bbb428b1e677dc1a75d4, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
